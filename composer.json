@@ -1,0 +1,13 @@
+{
+  "name": "samsara/fermat-benchmarking",
+  "type": "library",
+  "description": "A library providing PHP benchmarking using the samsara/fermat library.",
+  "keywords": ["benchmarking", "math", "cpu"],
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "samsara/fermat": "dev-master",
+    "aura/cli": "2.2.*"
+  },
+  "require-dev": {},
+  "suggest": {}
+}
