@@ -20,7 +20,7 @@ $getopt = $context->getopt($options);
  * BENCH ONE
  */
 
-$stdio->outln('<<greenbg black>>##Starting Bench One##<<reset>>');
+$stdio->outln('<<greenbg black>>##Starting Bench One | arctan(5)##<<reset>>');
 $stdio->outln('<<greenbg black>>Easy Number; High Precision; 500 Iterations<<reset>>');
 
 $startTime = new ImmutableNumber(microtime(true));
@@ -41,7 +41,7 @@ $stdio->outln('Time Elapsed:    '.$timeElapsed.'s');
  * BENCH TWO
  */
 
-$stdio->outln('<<greenbg black>>##Starting Bench Two##<<reset>>');
+$stdio->outln('<<greenbg black>>##Starting Bench Two | arctan(1.01)##<<reset>>');
 $stdio->outln('<<greenbg black>>Hard Number; Low Precision; 1 Iteration<<reset>>');
 
 $startTime = new ImmutableNumber(microtime(true));
