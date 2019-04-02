@@ -16,11 +16,14 @@ $options = [
 
 $getopt = $context->getopt($options);
 
+$stdio->outln('<<whitebg black bold>>==bench_arctan starting==<<reset>>');
+
 /*
  * BENCH ONE
  */
 
-$stdio->outln('<<greenbg black>>##Starting Bench One | arctan(5)##<<reset>>');
+$stdio->outln('============================================================');
+$stdio->outln('<<greenbg black bold>>##Starting Bench One | arctan(5)##<<reset>>');
 $stdio->outln('<<greenbg black>>Easy Number; High Precision; 500 Iterations<<reset>>');
 
 $startTime = new ImmutableNumber(microtime(true));
@@ -41,7 +44,8 @@ $stdio->outln('Time Elapsed:    '.$timeElapsed.'s');
  * BENCH TWO
  */
 
-$stdio->outln('<<greenbg black>>##Starting Bench Two | arctan(1.01)##<<reset>>');
+$stdio->outln('============================================================');
+$stdio->outln('<<greenbg black bold>>##Starting Bench Two | arctan(1.01)##<<reset>>');
 $stdio->outln('<<greenbg black>>Hard Number; Low Precision; 1 Iteration<<reset>>');
 
 $startTime = new ImmutableNumber(microtime(true));
@@ -57,3 +61,6 @@ $stdio->outln('Bench One Completed');
 $stdio->outln('Answer Given:    '.$arctan);
 $stdio->outln('Answer Expected: 0.7903732467');
 $stdio->outln('Time Elapsed:    '.$timeElapsed.'s');
+
+$stdio->outln('============================================================');
+$stdio->outln('<<whitebg black bold>>==bench_arctan finished==<<reset>>');
